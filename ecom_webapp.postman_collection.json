@@ -1,0 +1,195 @@
+{
+	"id": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+	"name": "Devon",
+	"description": "",
+	"order": [
+		"8f15c03f-0d0d-c4ec-bea9-e4836a3d4958",
+		"46932ea1-34f1-26fe-c550-26e09b7d9d4e",
+		"5aa4241a-4966-f56f-129f-cfae02ecee81",
+		"5d01cb78-8a96-3562-3945-c005a488a41d",
+		"eee34c3d-9d15-6d66-cd1a-72fbd64ce83a",
+		"2ed9021f-07a6-4537-6e0e-1aa7dca2ae7c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1683267996072,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2ed9021f-07a6-4537-6e0e-1aa7dca2ae7c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/api/users/signup",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8000/api/users/signup",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1683445761864,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"name\": \"Albert\",\n\t\"email\": \"albertrajmcas@gmail.com\",\n\t\"password\": \"testpw\",\n\t\"password_confirmation\": \"testpw\"\n}"
+		},
+		{
+			"id": "46932ea1-34f1-26fe-c550-26e09b7d9d4e",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/products/list?sort=availability:desc&availability=1",
+			"queryParams": [
+				{
+					"key": "sort",
+					"value": "availability:desc",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "availability",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1683438799182,
+			"name": "localhost:8000/api/products/list",
+			"description": "",
+			"collectionId": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+			"responses": []
+		},
+		{
+			"id": "5aa4241a-4966-f56f-129f-cfae02ecee81",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/products/3/show",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1683438800504,
+			"name": "localhost:8000/api/products/1/show",
+			"description": "",
+			"collectionId": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+			"responses": []
+		},
+		{
+			"id": "5d01cb78-8a96-3562-3945-c005a488a41d",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8000/api/categories/list",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:8000/api/categories/list",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1683270280371,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "8f15c03f-0d0d-c4ec-bea9-e4836a3d4958",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/api/tokens/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1683397435947,
+			"name": "localhost:8000/api/tokens/create",
+			"description": "",
+			"collectionId": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\":\"murphy.kristin@example.com\",\n\t\"password\": \"password\"\n}"
+		},
+		{
+			"id": "eee34c3d-9d15-6d66-cd1a-72fbd64ce83a",
+			"headers": "Authorization: Bearer 1|VKKqJUFvEO5xcMpttVIOpc6R28vDl5mAg5JcdV35\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer 1|VKKqJUFvEO5xcMpttVIOpc6R28vDl5mAg5JcdV35",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8000/api/products/1/review",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1683441489648,
+			"name": "localhost:8000/api/products/1/review",
+			"description": "",
+			"collectionId": "291c122a-f5a9-75c5-1ecc-996b4f83e5fa",
+			"responses": [],
+			"rawModeData": "{\n\t\"title\" : \"nice\",\n\t\"rating\" : 4,\n\t\"comment\" : \"nice product\"\n}"
+		}
+	]
+}
